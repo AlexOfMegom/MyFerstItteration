@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+
+
+
+
+
+        <div class="tags">
+
+
+            <div class="paragraph">
+                <h2 class="form-title" id="form_title" >Параграф и изменение текста</h2>
+                <div class="paragraph__container">
+                    <p>Lorem <strong>ipsum</strong>  <i>dolor</i>   <b>sit</b> &#9937;&#9884;&#10031;  <span id="span_one" >amet</span> <s>consectetur</s> <mark>consectetur adipisicing elit</mark> . Exercitationem laboriosam dicta, est laborum eveniet explicabo eos sit<br><br><br> ipsam architecto qui illo temporibus ad iure distinctio, rem eaque quibusdam illum fugit.</p>
+                </div>
+
+            </div>
+
+            <div class="tabs">
+                <div class="conter">
+
+                <h2 class="form-title" >Таблица</h2>
+                <div class="tabs__container">
+
+
+                   
+                    <table >
+                        <tbody>
+                          <tr>
+                            <th colspan="3">Nissan</th>
+                          </tr>
+                          <tr>
+                            <th>Модель</th>
+                            <th>Комплектация</th>
+                            <th>Наличие</th>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">Nissan Qashqai</td>
+                            <td>VISIA</td>
+                            <td class="green__pl">+</td>
+                          </tr>
+                          <tr>
+                            <td>TEKNA</td>
+                            <td class="green__pl">+</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">Nissan X-Trail</td>
+                            <td>ACENTA</td>
+                            <td class="green__pl">+</td>
+                          </tr>
+                          <tr>
+                            <td>CONNECTA</td>
+                            <td class="red__pl">-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                </div>
+            </div>
+
+            <div class="list">
+
+                <div class="list__cont">
+                <h2 class="form-title">Списки</h2>
+                <div class="list__contsiner">
+
+                    <div class="list__mark">
+                        <h4>Маркированный список</h4>
+                        <ul>
+                            <li class="list__mark--el">1</li>
+                            <li class="list__mark--el">2</li>
+                            <li class="list__mark--el">3</li>
+                            <li class="list__mark--el">4</li>
+                        </ul>
+                    </div>
+
+                    <div class="list__nam">
+                        <h4 >Нумерованный список</h4>
+                        <ol>
+                            <li><span class="num">1</span>Кофе</li>
+                            <li><span class="num">2</span>Чай</li>
+                            <li><span class="num">3</span>Молоко</li>
+                            <li><span class="num">4</span>Сливки</li>
+                        </ol>
+                    </div>
+                </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="form">
+                <form action="send.php" method="post" id="form" class="form__body">
+                    <h2 class="form-title">Виды inputs</h2>
+                    <div class="form__item">
+                        <label for="forName" class="form__leble ">Text:</label>
+                        <input type="text" name="name" id="forName" class="form__input" placeholder="Введите ваше имя">
+                    </div>
+
+
+                    <div class="form__item">
+                        <label for="forEmail" class="form__leble ">E-mail:</label>
+                        <input type="email" name="email" id="forEmail" class="form__input"
+                            placeholder="Введите ваш email">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="forNum" class="form__leble ">Number:</label>
+                        <input type="number" name="num" id="forNum" class="form__input"
+                            placeholder="Введите ваш возраст" step="1" min="18" max="100">
+                    </div>
+                    <div class="form__item">
+                        <label for="forPas" class="form__leble ">Password:</label>
+                        <input type="password" name="pas" id="forPas" class="form__input"
+                            placeholder="Введите ваш пароль">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="forTime" class="form__leble ">Datetime-local</label>
+                        <input type="datetime-local" name="time" id="forTime" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+
+                        <div class="form__label">Radio</div>
+                        <div class="options">
+                            <div class="options__item">
+                                <input id="formRihgtHended" checked type="radio" value="right" name="hand"
+                                    class="options__input">
+                                <label for="formRihgtHended" class="options__lable"><span>Правша</span></label>
+                            </div>
+                            <div class="options__item">
+                                <input id="formLeftHended" type="radio" value="left" name="hand" class="options__input">
+                                <label for="formLeftHended" class="options__lable"><span> Левша</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form__item">
+                        <label for="formMassege" class="form__leble">Textarea</label>
+                        <textarea id="textarea"  name="massage" id="formMassege" class="form__input"></textarea>
+                    </div>
+
+
+                    <div class="form__item">
+                        <label for="forColor" class="form__leble _req _email">Color</label>
+                        <input type="color" value="#A6E22A" name="color" id="forColor" class="form__input">
+                    </div>
+
+
+
+
+                    <div class="form__item">
+                        <div class="form__lable">Select</div>
+                        <select name="age" class="select" >
+                            <option value="От 18 до 25">Молодой</option>
+                            <option value="От 25 до 45">Средний</option>
+                            <option value="От 45">Старый</option>
+                        </select>
+
+
+                    </div>
+
+
+
+                    <div class="form__item">
+                        <div class="form__lable">File</div>
+                        <div class="file">
+                            <div class="file__item">
+                                <label for="fileInp" class="file__input" id="ggg" >Прикрепить фаил
+                                <input name="myFile" multiple type="file" class="file__input" id="fileInp" >
+                                </label>
+
+
+                               
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <p class="checkbox__txt">Checkbox</p>
+                            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                            <label for="formAgreement" class="checkbox__label _req">
+                                <p>Я даю свое согласие на обработку персональных данных и согласен с <a
+                                        href="#">*Условиями</a></p>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="form__item">
+                        <label class="form__leble">Reset</label>
+                        <input id="input_reset" type="reset" value="Очистить форму" class="form__button" >
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__leble">Submit</label>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </div>
+
+
+
+
+
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
