@@ -44,6 +44,10 @@ a{
     outline: none;
 }
 
+.file__input:focus{
+    box-shadow: 0 0 15px green;
+}
+
 .form__input:focus{
     box-shadow: 0 0 15px green;
 
@@ -279,6 +283,10 @@ input[type="file"] {
 .form__button:hover{
     background-color : #597250;
      
+}
+
+.file__input:hover{
+    background-color : #597250;
 }
 .form__button:active{
     top: 3px;
